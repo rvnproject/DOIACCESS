@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+    <head>
+	    <title>RavenDOI</title>      
+		
+		<script src="../../js/popup.js"></script>
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
+		<link rel="stylesheet" href="../../css/popup.css">
+
+		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
+
+	</head>
+    
+	<body background="../../images/background/raven_500_600.png">
+	    <h3>RavenDOI</h3>
+	    <div class="container raven-activation-ui">
+			<div class="row">
+			    <div class="base_url">
+			    	<span>Base URL: <input id="base_url" type="text" name="fname" value=""></span>
+			    </div>
+			    <div>
+			    	<small class="form-text text-muted"> Please, be sure this is a correct URL.</small>
+		   		</div>
+        	</div>
+        	</br>
+        	</br>
+        	<div class="row current_url_info">
+	        	<input type="checkbox" id="url_activation"/><label for="url_activation">Toggle</label>
+	        	<span id="current_page_base_url"></span>
+			    <div>
+			    	<button id="reload_button" class="button button_hb button_hb-type5 demo-buttons__button">
+			        	<span class="button__label"><i class="fa fa-refresh"></i></span>
+				    </button>  
+	        	</div>
+        	</div>
+	   	</div>
+	   	<div class="container">
+	   		<i class="fa fa-cog fa-2x raven-parameters" id="raven_parameters"></i>
+	   	</div>
+	</body>
+</html>
