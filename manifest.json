@@ -1,9 +1,9 @@
 {
-  "name": "RavenDOI",
+  "name": "__MSG_appName__",
   "author": "RavenProject",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "manifest_version": 2,
-  "description": "We believe that knowledge must be free, and if it's not, it's up to us to make it.",
+  "description": "__MSG_appDescription__",
   "icons": {
     "16": "icons/raven_icon_16.png",
     "128": "icons/raven_icon_128.png"

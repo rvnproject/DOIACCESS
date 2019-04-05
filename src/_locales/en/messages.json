@@ -1,14 +1,18 @@
 {
   "appName": {
-    "message": "Ext Starter",
+    "message": "RavenDOI",
     "description": "The name of the extension."
   },
   "appDescription": {
-    "message": "Boilerplate for building cross browser extensions",
+    "message": "We believe that knowledge must be free, and if it's not, it's up to us to make it.",
     "description": "The description of the extension."
   },
-  "btnTooltip": {
-    "message": "Ext Starter",
-    "description": "Tooltip for the button."
+  "firstPartUrlOnPopupView": {
+    "message": "Base URL:",
+    "description": "The message for the first part of the URL on the popup view."
+  },
+  "warningAboutUrlValidationOnPopupView": {
+    "message": "Please, be sure this is a correct URL.",
+    "description": "Warning message for the first part URL field."
   }
 }

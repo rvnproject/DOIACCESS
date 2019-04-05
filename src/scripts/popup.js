@@ -1,4 +1,6 @@
 import ext from "./utils/ext";
+import internationalize from "./utils/custom_i18n"
+
 
 function get_base_url_content() {
   /*
@@ -106,6 +108,9 @@ function add_listeners() {
 }
 
 window.onload = function() {
+  // NEED TO BE FIRST ACTION ON LOAD
+  internationalize();
+  
   // Apply in the base_url field the baseUrl stored value
   set_base_url_content();
   // Apply in the current_base_url field the currentBaseUrl stored value and set the switch (url_activation field)
