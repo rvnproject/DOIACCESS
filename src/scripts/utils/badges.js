@@ -5,6 +5,9 @@ function update_badge() {
 	** Update the extension icon badge with ON/OFF if the baseUrlState is True/False for the current page url
 	*/
 	ext.tabs.query({'active': true, 'lastFocusedWindow': true}, function (tabs) {
+		if (!tabs) {
+			return;
+		}
 		var current_url = new URL(tabs[0].url);	
 		ext.storage.sync.get("baseUrlState", function(items) {
 			if (!items.baseUrlState[current_url.origin]) {

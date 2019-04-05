@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-      <title>__MSG_appName__</title>
+      <title class="i18n-content">__MSG_appName__</title>
     <script src="./scripts/popup.js"></script>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
@@ -12,14 +12,14 @@
   </head>
     
   <body background="images/background/raven_500_600.png">
-      <h3>__MSG_appName__</h3>
+      <h3 class="i18n-content">__MSG_appName__</h3>
       <div class="container raven-activation-ui">
       <div class="row">
           <div class="base_url">
-            <span>__MSG_firstPartUrlOnPopupView__ <input id="base_url" type="text" name="fname" value=""></span>
+            <span class="i18n-content">__MSG_firstPartUrlOnPopupView__ <input id="base_url" type="text" name="fname" value=""></span>
           </div>
           <div>
-            <small class="form-text text-muted"> __MSG_warningAboutUrlValidationOnPopupView__ </small>
+            <small class="i18n-content form-text text-muted"> __MSG_warningAboutUrlValidationOnPopupView__ </small>
           </div>
           </div>
           </br>
@@ -28,14 +28,15 @@
             <input type="checkbox" id="url_activation"/><label for="url_activation">Toggle</label>
             <span id="current_page_base_url"></span>
           <div>
-            <button id="reload_button" class="button button_hb button_hb-type5 demo-buttons__button">
+            <button id="reload_button" class="button button_hb button_hb-type5 demo-buttons__button" title="refresh">
                 <span class="button__label"><i class="fa fa-refresh"></i></span>
             </button>  
             </div>
           </div>
       </div>
       <div class="container">
-        <i class="fa fa-cog fa-2x raven-parameters" id="raven_parameters"></i>
+        <i class="fa fa-cog fa-2x raven-parameters" id="raven_parameters" title="parameters"></i>
+        <i class="fa fa-twitter fa-2x raven-twitter" id="raven_twitter" title="twitter"></i>
       </div>
   </body>
 </html>

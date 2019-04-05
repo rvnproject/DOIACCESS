@@ -28,7 +28,6 @@ ext.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
 
 ext.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 	if (message.updateBaseUrlState) {
-		console.log(update_badge);
 		update_badge();
 	}
 });
