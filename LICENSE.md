@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2017 Bharani / Email This
+Copyright (c) 2019 Maxime de Pachtere
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
