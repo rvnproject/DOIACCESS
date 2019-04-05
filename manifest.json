@@ -1,36 +1,50 @@
 {
   "name": "RavenDOI",
-  "version": "0.0.4",
+  "author": "RavenProject",
+  "version": "0.0.5",
   "manifest_version": 2,
   "description": "We believe that knowledge must be free, and if it's not, it's up to us to make it.",
   "icons": {
-    "16": "images/icons/raven_icon_16.png",
-    "48": "images/icons/raven_icon_48.png",
-    "128": "images/icons/raven_icon_128.png"
+    "16": "icons/raven_icon_16.png",
+    "128": "icons/raven_icon_128.png"
   },
   "default_locale": "en",
   "background": {
     "scripts": [
-      "js/badges.js",
-      "src/bg/background.js"
+      "scripts/background.js"
     ],
     "persistent": false
   },
-  "options_page": "src/options_custom/index.html",
-  "browser_action": {
-    "default_icon": "images/icons/raven_icon_19.png",
-    "default_title": "RavenDOI",
-    "default_popup": "src/browser_action/popup.html"
+  "permissions": [
+    "tabs",
+    "storage",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "options_ui": {
+    "page": "options.html"
   },
   "content_scripts": [
     {
-      "matches": ["https://*/*"],
-      "js": ["js/apply_DOI_link.js"]
+      "matches": [
+        "http://*/*",
+        "https://*/*"
+      ],
+      "js": [
+        "scripts/contentscript.js"
+      ],
+      "run_at": "document_end",
+      "all_frames": false
     }
   ],
-  "permissions": [
-    "https://*/*",
-    "storage",
-    "tabs"
-  ]
+  "browser_action": {
+    "default_icon": {
+      "19": "icons/raven_icon_19.png",
+      "38": "icons/raven_icon_38.png"
+    },
+    "default_title": "RavenDOI",
+    "default_popup": "popup.html"
+  }
 }
+
+
