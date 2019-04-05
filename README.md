@@ -11,7 +11,7 @@ Used with https://sci-hub.tw as base URL, RavenDOI transform any DOI on your pag
 git clone git@github.com:mde-pach/ravenDOI.git
 npm install
 npm run build
-```shell
+```sh
 
 Then install manually from `manifest.json` generated in the `build/$browser` folder. 
 
