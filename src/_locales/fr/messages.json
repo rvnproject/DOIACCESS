@@ -4,7 +4,7 @@
     "description": "Le nom de l'extension."
   },
   "appDescription": {
-    "message": "Nous sommes convaincus que la connaissance est une chose qui doit etre accessible a tous, et que si elle ne l'est pas, c'est a nous de la rendre.",
+    "message": "Nous sommes convaincus que la connaissance est une chose qui doit être accessible à tous, et que si elle ne l'est pas, c'est à nous de la rendre.",
     "description": "La description de l'extension."
   },
   "firstPartUrlOnPopupView": {
@@ -12,7 +12,7 @@
     "description": "Le message pour la base de l'URL de la vue de la popup."
   },
   "warningAboutUrlValidationOnPopupView": {
-    "message": "Soyez certains que cet URL est valide et correctement est formaté.",
+    "message": "Vérifiez que cet URL est valide et correctement formaté.",
     "description": "Message d'alerte pour le champ de l'URL."
   }
 }
