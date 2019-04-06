@@ -1,9 +1,9 @@
 # RavenDOI
-RavenDOI is a chrome extension that add clickable link to every DOI number on the activated page with the base URL of your choice (https://sci-hub.tw for example).
+RavenDOI is a Chrome extension that adds a clickable link to every DOI number on the visited page with the base URL of your choice (https://sci-hub.tw for example).
 
-Used with https://sci-hub.tw as base URL, RavenDOI transform any DOI on your page on clickable link to the corresponding sci-hub article.
+Used with https://sci-hub.tw as base URL, RavenDOI transforms any DOI on the page into a clickable link to the corresponding sci-hub article.
 
-# How to use it ?
+# How to use it?
 ## Installation
 
 #### Install from source
@@ -13,7 +13,7 @@ npm install
 npm run build
 ```
 
-Then install manually from `manifest.json` generated in the `build/$browser` folder. 
+Then install manually from `manifest.json` generated in the `build/$browser` folder.
 
 #### Install from store
 [Chrome](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)

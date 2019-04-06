@@ -12,7 +12,7 @@
     "description": "The message for the first part of the URL on the popup view."
   },
   "warningAboutUrlValidationOnPopupView": {
-    "message": "Please, be sure this is a correct URL.",
+    "message": "Please, make sure this is a correct URL.",
     "description": "Warning message for the first part URL field."
   }
 }
