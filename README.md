@@ -1,3 +1,7 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Firefox](https://img.shields.io/amo/v/MYID.svg)]()
+[![Chrome](https://img.shields.io/chrome-web-store/v/edamfibpjbadepheeohkbnanbbgjnfpl.svg)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
+
 # RavenDOI
 RavenDOI is a Chrome extension that adds a clickable link to every DOI number on the visited page with the base URL of your choice (https://sci-hub.tw for example).
 
