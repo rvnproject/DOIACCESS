@@ -25,4 +25,4 @@ Then install manually from `manifest.json` generated in the `build/$browser` fol
 [Opera] TODO
 
 # License
-This project is licensed under the terms of the MIT license.
+This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license.

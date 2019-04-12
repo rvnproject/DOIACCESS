@@ -1,17 +1,45 @@
 import ext from "./utils/ext";
 import internationalize from "./utils/custom_i18n"
+import {parse} from 'tldjs';
 
+
+function check_base_url_content() {
+    var base_url = document.getElementById("base_url");
+    var base_url_warning_message = document.getElementById("base_url_warning_message");
+    var formatted_url = new parse(base_url.value);
+
+
+    if (base_url.value.match(/^(?:http(?:s)?:\/\/).*$/g) && formatted_url.isValid && formatted_url.publicSuffix || formatted_url.isIp) {
+        // i18n message
+        base_url_warning_message.textContent = ext.i18n.getMessage("CorrectBaseUrlMessage");
+        // change class of message
+        base_url_warning_message.classList.remove("warning_message_incorrect_url");
+        base_url_warning_message.classList.add("warning_message_correct_url");
+        // change class of input field
+        base_url.classList.remove("incorrect_url");
+        base_url.classList.add("correct_url");
+    }
+    else {
+        // i18n message
+        base_url_warning_message.textContent = ext.i18n.getMessage("IncorrectBaseUrlMessage");
+        // change class of message
+        base_url_warning_message.classList.remove("warning_message_correct_url");
+        base_url_warning_message.classList.add("warning_message_incorrect_url");
+        // change class of input field
+        base_url.classList.remove("correct_url");
+        base_url.classList.add("incorrect_url");
+    }
+}
 
 function get_base_url_content() {
   /*
   ** Get base_url field content and store it as baseUrl. The base_url field is the URL
   **  get to build the DOI URL
-  ** For example, www.sci-hub.tw is a valid base_url because of the DOI URL build:
-  **  www.sci-hub.tw/Here_is_the_DOI
   */
 
   // The base_url field content must be a valid url, there is no verification about that
   ext.storage.sync.set({ "baseUrl": document.getElementById("base_url").value });
+  check_base_url_content();
 }
 
 function set_base_url_content() {
@@ -21,6 +49,7 @@ function set_base_url_content() {
 
   ext.storage.sync.get("baseUrl", function(items) {
     document.getElementById("base_url").value = (items.baseUrl == undefined ? "" : items.baseUrl)
+    check_base_url_content();
   });
 }
 
@@ -107,6 +136,13 @@ function add_listeners() {
   document.getElementById("base_url").addEventListener("paste", get_base_url_content);
 }
 
+function remove_preload() {
+    /*
+    ** Remove the preload class to make the transition instantly
+    */
+    document.getElementById("toggle-label").classList.remove('preload');
+}
+
 window.onload = function() {
   // NEED TO BE FIRST ACTION ON LOAD
   internationalize();
@@ -119,4 +155,7 @@ window.onload = function() {
 
   // Add all listeners
   add_listeners();
+
+  // Very dirty way to wait until the page is RENDERED and not LOADED like we see in many solutions on internet.
+  setTimeout(remove_preload, 100);
 }

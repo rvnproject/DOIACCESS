@@ -12,6 +12,7 @@ ext.runtime.onInstalled.addListener(function() {
 
 ext.tabs.onActivated.addListener(function (activeInfo) {
 	ext.tabs.get(activeInfo.tabId, function(tab) {
+		console.log(tab);
     	var current_url = new URL(tab.url);
 	    ext.storage.sync.set({ "currentPageBaseUrl": current_url.origin });	
 		update_badge();
@@ -31,3 +32,12 @@ ext.runtime.onMessage.addListener(function(message, sender, sendResponse) {
 		update_badge();
 	}
 });
+
+// Need improvement. See you in v1.1 !
+// ext.webNavigation.onErrorOccurred.addListener(function(details) {
+// 	console.log(details);
+// 	if (details.error == "net::ERR_NAME_NOT_RESOLVED") {
+// 		var current_url = new URL(details.url);
+// 		chrome.runtime.sendMessage({dnsError: true});
+// 	}
+// });

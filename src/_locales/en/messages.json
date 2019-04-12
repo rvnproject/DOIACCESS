@@ -11,8 +11,20 @@
     "message": "Base URL:",
     "description": "The message for the first part of the URL on the popup view."
   },
-  "warningAboutUrlValidationOnPopupView": {
-    "message": "Please, make sure this is a correct URL.",
-    "description": "Warning message for the first part URL field."
+  "CorrectBaseUrlMessage": {
+    "message": "This URL is correctly formatted",
+    "description": "Message for a good formatted base URL."
+  },
+  "IncorrectBaseUrlMessage": {
+    "message": "This URL is not correctly formatted",
+    "description": "Message for a wrong formatted base URL."
+  },
+  "DnsNotificationTitle": {
+    "message": "DNS errors ?",
+    "description": "Title for the DNS problem notification."
+  },
+  "DnsNotificationMessage": {
+    "message": "There may be DNS restrictions on some websites in some countries.\nClick here to solve them !",
+    "description": "Message for the DNS problem notification."
   }
 }

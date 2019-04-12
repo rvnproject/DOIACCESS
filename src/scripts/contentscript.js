@@ -11,7 +11,7 @@ window.onload = function() {
                     if (items.baseUrl != "" && items.baseUrl != undefined) {
                         // Search for DOI (ISO 263242) on the page  
                         var DOINumberRegex = /\b((?<!\/)10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
-                        // Search Link for doi.org  
+                        // Search Link for doi.org
                         var DOIOrgRegex = /\b(http(?:s)?\:\/\/doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g
                         
                         // If DOI are find on the page, add a clickable link on the DOI on the page

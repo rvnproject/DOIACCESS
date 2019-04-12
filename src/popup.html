@@ -1,42 +1,47 @@
 <!doctype html>
 <html>
-    <head>
-      <title class="i18n-content">__MSG_appName__</title>
+  <head>
+    <title class="i18n-content">__MSG_appName__</title>
     <script src="./scripts/popup.js"></script>
     
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.3.1/litera/bootstrap.min.css">
     <link rel="stylesheet" href="styles/popup.css">
 
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
-
   </head>
     
-  <body background="images/background/raven_500_600.png">
-      <h3 class="i18n-content">__MSG_appName__</h3>
-      <div class="container raven-activation-ui">
-      <div class="row">
-          <div class="base_url">
-            <span class="i18n-content">__MSG_firstPartUrlOnPopupView__ <input id="base_url" type="text" name="fname" value=""></span>
-          </div>
-          <div>
-            <small class="i18n-content form-text text-muted"> __MSG_warningAboutUrlValidationOnPopupView__ </small>
-          </div>
-          </div>
-          </br>
-          </br>
-          <div class="row current_url_info">
-            <input type="checkbox" id="url_activation"/><label for="url_activation">Toggle</label>
-            <span id="current_page_base_url"></span>
-          <div>
-            <button id="reload_button" class="button button_hb button_hb-type5 demo-buttons__button" title="refresh">
-                <span class="button__label"><i class="fa fa-refresh"></i></span>
-            </button>  
-            </div>
-          </div>
+  <body background="images/background/raven_500_600.png" class="preload">
+    <h3 class="i18n-content">__MSG_appName__</h3>
+    <small class="i18n-content owner">by <a target="_blank" rel="noopener noreferrer" href="https://www.ravenproject.me">Raven Project</a></small>
+    <div class="container raven-activation-ui">
+    <div class="row">
+      <div class="base_url">
+        <span class="i18n-content">__MSG_firstPartUrlOnPopupView__ <input class="base_url_input" id="base_url" type="text" name="fname" value="" placeholder="https://yourURL.com"></span>
       </div>
-      <div class="container">
-        <i class="fa fa-cog fa-2x raven-parameters" id="raven_parameters" title="parameters"></i>
-        <i class="fa fa-twitter fa-2x raven-twitter" id="raven_twitter" title="twitter"></i>
+    </div>
+    <div class="row">
+      <small id="base_url_warning_message" class="i18n-content form-text text-muted"></small>
       </div>
+      </br>
+      </br>
+      <div class="row current_url_info">
+        <input class="preload" type="checkbox" id="url_activation"/><label id="toggle-label" class="preload" for="url_activation">Toggle</label>
+        <span id="current_page_base_url"></span>
+        <div>
+          <button id="reload_button" class="button refresh_button" title="refresh">
+            <i class="fa fa-refresh fa-spin-hover"></i>
+          </button>
+        </div>
+      </div>
+      <div class="row bottom">
+        <div class="raven_bug">
+          <a target="_blank" rel="noopener noreferrer" href="https://www.ravenproject.me#contact"><i class="fa fa-bug fa-2x" title="report a bug"></i></a>
+        </div>
+        <a target="_blank" rel="noopener noreferrer" href="https://www.ravenproject.me/#support-us" id="support_us" class="btn button support_us_button">Support us</a>
+        <div class="raven_parameters">
+          <i class="fa fa-cog fa-2x" id="raven_parameters" title="parameters"></i>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
