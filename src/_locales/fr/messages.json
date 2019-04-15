@@ -4,7 +4,7 @@
     "description": "Le nom de l'extension."
   },
   "appDescription": {
-    "message": "Nous sommes convaincus que la connaissance est une chose qui doit être accessible à tous, et que si elle ne l'est pas, c'est à nous de la rendre.",
+    "message": "RavenDOI permet de changer les numéros DOI en liens cliquables vers n'importe quel site comme sci-hub par exemple.",
     "description": "La description de l'extension."
   },
   "firstPartUrlOnPopupView": {

@@ -4,7 +4,7 @@
     "description": "The name of the extension."
   },
   "appDescription": {
-    "message": "We believe that knowledge must be free, and if it's not, it's up to us to make it.",
+    "message": "RavenDOI allows you to change DOI numbers into clickable links to any site such as sci-hub for example.",
     "description": "The description of the extension."
   },
   "firstPartUrlOnPopupView": {
