@@ -1,6 +1,7 @@
 <!doctype html>
 <html>
   <head>
+    <meta charset="utf-8">
     <title class="i18n-content">__MSG_appName__</title>
     <script src="./scripts/popup.js"></script>
     
@@ -10,13 +11,15 @@
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="screen" />
   </head>
     
-  <body background="images/background/raven_500_600.png" class="preload">
-    <h3 class="i18n-content">__MSG_appName__</h3>
-    <small class="i18n-content owner">by <a target="_blank" rel="noopener noreferrer" href="https://www.ravenproject.me">Raven Project</a></small>
+  <body background="images/background/raven_500_600.png">
+    <div class="title-flex">
+      <div class="i18n-content title">__MSG_appName__</div>
+      <div class="i18n-content sub-title">by <a target="_blank" rel="noopener noreferrer" href="https://www.ravenproject.me">Raven Project</a></div>
+    </div>
     <div class="container raven-activation-ui">
     <div class="row">
       <div class="base_url">
-        <span class="i18n-content">__MSG_firstPartUrlOnPopupView__ <input class="base_url_input" id="base_url" type="text" name="fname" value="" placeholder="https://yourURL.com"></span>
+        <span class="i18n-content">__MSG_firstPartUrlOnPopupView__ <input class="base_url_input" id="base_url" type="text" name="fname" value="" placeholder="https://example.com"></span>
       </div>
     </div>
     <div class="row">
@@ -25,7 +28,7 @@
       </br>
       </br>
       <div class="row current_url_info">
-        <input class="preload" type="checkbox" id="url_activation"/><label id="toggle-label" class="preload" for="url_activation">Toggle</label>
+        <input class="preload" type="checkbox" id="url_activation" disabled/><label id="toggle-label" class="preload" for="url_activation">Toggle</label>
         <span id="current_page_base_url"></span>
         <div>
           <button id="reload_button" class="button refresh_button" title="refresh">

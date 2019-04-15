@@ -83,6 +83,8 @@ function set_url_activation() {
     ext.storage.sync.get("baseUrlState", function(items) {
       // If the baseUrlState of the current_page_base_url is undefined or false, set the
       //  url_activation switch (checked attribute) on false else, set the switch on true
+        
+      document.getElementById("url_activation").disabled = false;
       document.getElementById("url_activation").checked = (!items.baseUrlState[current_page_base_url] ? false : true);
     });
   });
@@ -151,11 +153,15 @@ window.onload = function() {
   set_base_url_content();
   // Apply in the current_base_url field the currentBaseUrl stored value and set the switch (url_activation field)
   //  on its stored position (baseUrlState value)
+  
   set_current_url_info();
 
   // Add all listeners
   add_listeners();
 
   // Very dirty way to wait until the page is RENDERED and not LOADED like we see in many solutions on internet.
-  setTimeout(remove_preload, 100);
+  // There is an other behavior (on firefox for exemple) because of the time loading and render the app.
+  // Must be remove with a better general behavior
+  // For now this trick is use to make instant the setting of the current state of the url.
+  setTimeout(remove_preload, 200);
 }

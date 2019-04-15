@@ -18,13 +18,5 @@
   "IncorrectBaseUrlMessage": {
     "message": "This URL is not correctly formatted",
     "description": "Message for a wrong formatted base URL."
-  },
-  "DnsNotificationTitle": {
-    "message": "DNS errors ?",
-    "description": "Title for the DNS problem notification."
-  },
-  "DnsNotificationMessage": {
-    "message": "There may be DNS restrictions on some websites in some countries.\nClick here to solve them !",
-    "description": "Message for the DNS problem notification."
   }
 }

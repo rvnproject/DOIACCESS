@@ -11,8 +11,12 @@
     "message": "Base d'URL:",
     "description": "Le message pour la base de l'URL de la vue de la popup."
   },
-  "warningAboutUrlValidationOnPopupView": {
-    "message": "Vérifiez que cet URL est valide et correctement formaté.",
-    "description": "Message d'alerte pour le champ de l'URL."
+  "CorrectBaseUrlMessage": {
+    "message": "Cet URL est correctement formaté.",
+    "description": "Message d'un URL bien formaté."
+  },
+  "IncorrectBaseUrlMessage": {
+    "message": "Cet URL n'est pas correctement formaté.",
+    "description": "Message d'un URL mal formaté."
   }
 }

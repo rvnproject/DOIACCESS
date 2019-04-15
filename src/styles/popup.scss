@@ -1,12 +1,29 @@
 body, section {
   width: 400px;
   max-width: 400px;
-  height: 500px;
-  max-height: 500px;
   overflow-x: hidden;
   padding: 20px;
+  height: 450px;
+  max-height: 450px;
   font-size: 15px;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Roboto', arial;
+}
+
+// Using flexbox/scss feature
+.title-flex {
+  display: flex;
+  align-items: center;
+  padding-bottom: 40px;
+  .title {
+    font-size: 30px;
+    flex-grow: 2;
+    text-align: right;
+  }
+  .sub-title {
+    font-size: 13px;
+    padding-left: 10px;
+    align-self: flex-end;
+  }
 }
 
 span {
@@ -45,12 +62,6 @@ h3 {
   margin-bottom: 0px;
   margin-top: 10px;
   text-align: center;
-}
-
-.owner {
-  text-align: right;
-  display: block;
-  padding-bottom: 40px;
 }
 
 small {
@@ -106,6 +117,14 @@ label:after {
 
 label:hover:after {
   width: 25px;
+}
+
+input:disabled + label:after {
+  left: calc(33%);
+}
+
+input:disabled + label {
+  background: #d3d3d3;
 }
 
 input:checked + label {
@@ -167,12 +186,12 @@ label:active:after {
   transition: 0.4s;
 }
 
-// Using flexbox
+// Using flexbox/scss feature
 .bottom {
-  // TODO Need to fix this one by making good flexbox css
-  margin-top: 210px;
+  // TODO Need to fix this one by making good flexbox
+  margin-top: 170px;
 
-  margin-bottom: 20px;
+  margin-bottom: 0px;
   display: flex;
   justify-content: space-between;
 
@@ -185,6 +204,10 @@ label:active:after {
     margin-left:auto;
     margin-right:30px;
     width: 100px;
+    transition: 0.4s;
+    &:hover {
+      color: blue;
+    }
   }
 
   .raven_bug {
