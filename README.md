@@ -1,6 +1,6 @@
+[![Firefox](https://img.shields.io/amo/users/ravenproject_doi.svg)](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)
+[![Chrome](https://img.shields.io/chrome-web-store/users/edamfibpjbadepheeohkbnanbbgjnfpl.svg)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Firefox](https://img.shields.io/amo/v/MYID.svg)]()
-[![Chrome](https://img.shields.io/chrome-web-store/v/edamfibpjbadepheeohkbnanbbgjnfpl.svg)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
 
 # RavenDOI
 RavenDOI is a Chrome extension that adds a clickable link to every DOI number on the visited page with the base URL of your choice (https://sci-hub.tw for example).
@@ -20,9 +20,9 @@ npm run build
 Then install manually from `manifest.json` generated in the `build/$browser` folder.
 
 #### Install from store
-[Chrome](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
-[Firefox] TODO
-[Opera] TODO
+[![Chrome](https://img.shields.io/chrome-web-store/v/edamfibpjbadepheeohkbnanbbgjnfpl.svg)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
+[![Firefox](https://img.shields.io/amo/v/ravenproject_doi.svg)](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)
+
 
 # License
 This project is licensed under the terms of the [MIT](https://opensource.org/licenses/MIT) license.
