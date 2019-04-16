@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import ext from "./ext";
 
 function internationalize() {

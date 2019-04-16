@@ -1,3 +1,5 @@
+/* eslint-disable */
+
 'use strict';
 
 import ext from "./utils/ext";

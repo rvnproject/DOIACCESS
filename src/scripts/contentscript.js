@@ -12,8 +12,8 @@ window.onload = function() {
                         // Search for DOI (ISO 263242) on the page  
                         var DOINumberRegex = /\b((?<!\/)10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
                         // Search Link for doi.org
-                        var DOIOrgRegex = /\b(http(?:s)?\:\/\/doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g
-                        
+                        var DOIOrgRegex = /\b(http(?:s)?\:\/\/doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
+
                         // If DOI are find on the page, add a clickable link on the DOI on the page
                         if (document.body.innerHTML.match(DOINumberRegex)) {
                             document.body.innerHTML = document.body.innerHTML.replace(DOINumberRegex, '<a target="_blank" rel="noopener noreferrer" href="' + items.baseUrl + '/$1">$1</a>');

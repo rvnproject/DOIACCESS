@@ -1,3 +1,5 @@
+/* eslint no-undef: 0 */
+
 import ext from "./utils/ext";
 import internationalize from "./utils/custom_i18n"
 import {parse} from 'tldjs';
