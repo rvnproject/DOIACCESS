@@ -5,7 +5,7 @@ RavenDOI is a Chrome extension that adds a clickable link to every DOI number on
 
 Used with https://sci-hub.tw as base URL, RavenDOI transforms any DOI on the page into a clickable link to the corresponding sci-hub article.
 
-![RavenProject](/resources/img/raven_project_banner.png)
+[![RavenProject](/resources/img/raven_project_banner.png)](https://ravenproject.me)
 RavenDOI is built by [RavenProject](https://www.ravenproject.me)
 
 [![Chrome](https://img.shields.io/chrome-web-store/users/edamfibpjbadepheeohkbnanbbgjnfpl.svg?label=Chrome%20users)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
