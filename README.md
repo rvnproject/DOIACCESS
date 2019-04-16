@@ -1,7 +1,7 @@
 [![RavenProject](/resources/img/raven_project_banner.png)](https://www.ravenproject.me)
 
 # RavenDOI  
-**_by Raven Project_**
+<small>by Raven Project</small>
 
 ---
 
