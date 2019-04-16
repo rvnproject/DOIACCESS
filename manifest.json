@@ -1,9 +1,9 @@
 {
-  "name": "__MSG_appName__",
-  "author": "RavenProject",
-  "version": "0.0.6",
+  "name": "__MSG_manifestAppName__",
+  "author": "Raven Project",
+  "version": "1.0.0",
   "manifest_version": 2,
-  "description": "__MSG_appDescription__",
+  "description": "__MSG_manifestAppDescription__",
   "icons": {
     "16": "icons/raven_icon_16.png",
     "128": "icons/raven_icon_128.png"
@@ -18,8 +18,6 @@
   "permissions": [
     "tabs",
     "storage",
-    "webNavigation",
-    "notifications",
     "http://*/*",
     "https://*/*"
   ],

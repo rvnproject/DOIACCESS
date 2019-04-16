@@ -1,11 +1,15 @@
 {
-  "appName": {
+  "manifestAppName": {
     "message": "RavenDOI",
-    "description": "The name of the extension."
+    "description": "The name of the extension in the manifest."
   },
-  "appDescription": {
+  "manifestAppDescription": {
     "message": "RavenDOI allows you to change DOI numbers into clickable links to any site such as sci-hub for example.",
     "description": "The description of the extension."
+  },
+  "popupAppName": {
+    "message": "RavenDOI",
+    "description": "The name of the extension in the popup view."
   },
   "firstPartUrlOnPopupView": {
     "message": "Base URL:",
@@ -18,5 +22,37 @@
   "IncorrectBaseUrlMessage": {
     "message": "This URL is not correctly formatted",
     "description": "Message for a wrong formatted base URL."
+  },
+  "popupSupportUs": {
+    "message": "Support us",
+    "description": "Support us message."
+  },
+  "optionSupportUsTitle": {
+    "message": "Support us",
+    "description": "Title of the support us section."
+  },
+  "optionContribution": {
+    "message": "Contribute on <a href=\"https://github.com/mde-pach/ravenDOI\" target=\"_blank\" rel=\"noopener noreferrer\">github</a>",
+    "description": "Contribution informations."
+  },
+  "optionContactUs": {
+    "message": "Contact us through <a href=\"https://www.ravenproject.me/#contact\" target=\"_blank\" rel=\"noopener noreferrer\">our website</a>",
+    "description": "Contact informations."
+  },
+  "optionDonation": {
+    "message": "You can support us by <a href=\"https://www.ravenproject.me/#support-us\" target=\"_blank\" rel=\"noopener noreferrer\">donating</a> for this project and for following ones",
+    "description": "Donation informations."
+  },
+  "optionCreditsTitle": {
+    "message": "Credits",
+    "description": "Title of the credits section."
+  },
+  "optionDesignCredits": {
+    "message": "Designed by Paul Brochard",
+    "description": "Paul Brochard credits."
+  },
+  "optionDevelopCredits": {
+    "message": "Developed by Maxime de Pachtere",
+    "description": "Maxime de Pachtere credits."
   }
 }
