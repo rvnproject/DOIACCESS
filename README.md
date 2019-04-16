@@ -1,3 +1,7 @@
+[![Codacy Note](https://api.codacy.com/project/badge/Grade/a1fe1ba01d2e41b7aec6b92338869188)](https://app.codacy.com/project/mde-pach/ravenDOI/dashboard)
+[![Codacy Coverage](https://img.shields.io/codacy/coverage/a1fe1ba01d2e41b7aec6b92338869188/master.svg)](https://app.codacy.com/project/mde-pach/ravenDOI/dashboard)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 [![RavenProject](/resources/img/raven_project_banner.png)](https://www.ravenproject.me)
 
 # RavenDOI  
