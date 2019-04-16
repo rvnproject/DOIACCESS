@@ -1,3 +1,6 @@
+/* eslint no-empty: 0 */
+/* eslint no-undef: 0 */
+
 const apis = [
   'alarms',
   'bookmarks',
@@ -62,7 +65,6 @@ function Extension () {
       this.browserAction = browser.browserAction
     }
   } catch (e) {}
-
 }
 
 module.exports = new Extension();

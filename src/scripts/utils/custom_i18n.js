@@ -11,6 +11,6 @@ function internationalize() {
             return v1 ? ext.i18n.getMessage(v1) : "";
         });
         elements[i].innerHTML = i18nContent;
-    };
+    }
 }
 module.exports = internationalize;

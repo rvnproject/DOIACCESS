@@ -140,7 +140,7 @@ function buildJS(target) {
       "mangle": false,
       "output": {
         "ascii_only": true
-      } 
+      }
     })))
     .pipe(gulp.dest(`build/${target}/scripts`));
   });
