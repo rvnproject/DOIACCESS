@@ -1,3 +1,4 @@
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/02f57e135d0f460a87a5d1138768bde1)](https://app.codacy.com/app/mde-pach/ravenDOI?utm_source=github.com&utm_medium=referral&utm_content=mde-pach/ravenDOI&utm_campaign=Badge_Grade_Dashboard)
 [![RavenProject](/resources/img/raven_project_banner.png)](https://www.ravenproject.me)
 
 # RavenDOI  
