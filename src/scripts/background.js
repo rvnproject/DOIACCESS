@@ -13,20 +13,20 @@ ext.runtime.onInstalled.addListener(function() {
 ext.tabs.onActivated.addListener(function (activeInfo) {
   ext.tabs.get(activeInfo.tabId, function(tab) {
       var current_url = new URL(tab.url);
-      ext.storage.sync.set({ "currentPageBaseUrl": current_url.origin });  
+      ext.storage.sync.set({ "currentPageBaseUrl": current_url.origin });
     update_badge();
     });
 });
 
 ext.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
-  if (tab.active == true) {
+  if (tab.active === true) {
     var current_url = new URL(tab.url);
-      ext.storage.sync.set({ "currentPageBaseUrl": current_url.origin });  
+      ext.storage.sync.set({ "currentPageBaseUrl": current_url.origin });
     update_badge();
   }
 });
 
-ext.runtime.onMessage.addListener(function(message, sender, sendResponse) {
+ext.runtime.onMessage.addListener(function(message, sender) {
   if (message.updateBaseUrlState) {
     update_badge();
   }

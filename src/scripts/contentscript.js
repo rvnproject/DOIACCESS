@@ -6,7 +6,7 @@ window.onload = function() {
         var current_page_base_url = items.currentPageBaseUrl;
         ext.storage.sync.get("baseUrlState", function(items) {
             // If the current page is activated for RavenDOI
-            if (items.baseUrlState[current_page_base_url] == true) {
+            if (items.baseUrlState[current_page_base_url] === true) {
                 ext.storage.sync.get("baseUrl", function(items) {
                     if (items.baseUrl != "" && items.baseUrl != undefined) {
                         // Search for DOI (ISO 263242) on the page  
