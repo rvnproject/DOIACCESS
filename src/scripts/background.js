@@ -1,6 +1,7 @@
 import ext from "./utils/ext";
 import update_badge from "./utils/badges";
 
+
 ext.runtime.onInstalled.addListener(function() {
   ext.storage.sync.get("baseUrlState", function(items) {
     if (items.baseUrlState == undefined) {
@@ -10,6 +11,7 @@ ext.runtime.onInstalled.addListener(function() {
   });
 });
 
+// When tabs is active, save the base url of the current tab
 ext.tabs.onActivated.addListener(function (activeInfo) {
   ext.tabs.get(activeInfo.tabId, function(tab) {
       var current_url = new URL(tab.url);
@@ -18,6 +20,7 @@ ext.tabs.onActivated.addListener(function (activeInfo) {
     });
 });
 
+// When tabs is update, save the base url of the current tab
 ext.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
   if (tab.active === true) {
     var current_url = new URL(tab.url);

@@ -4,8 +4,9 @@ import ext from "./ext";
 
 function internationalize() {
     /*
-    ** Update popup content with
+    ** Update i18n content with their corresponding translation.
     */
+
     var elements = document.getElementsByClassName('i18n-content');
     for (var i = 0; i < elements.length; ++i) {
         var elementContent = elements[i].innerHTML.toString();
