@@ -8,15 +8,15 @@ function replace_dois(base_url) {
 
     if (base_url != "" && base_url != undefined) {
         // Search for DOI (ISO 263242) on the page  
-        var DOINumberRegex = /\b((?<!\/)10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
+        var DOINumberRegex = /([^\/])(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
         // Search Link for doi.org
-        var DOIOrgRegex = /\b(http(?:s)?\:\/\/doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
+        var DOIOrgRegex = /(\/\/doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
 
         // If DOI are find on the page, add a clickable link to base_url on the DOI on the page
         if (document.body.innerHTML.match(DOINumberRegex)) {
             document.body.innerHTML = document.body.innerHTML.replace(
                 DOINumberRegex,
-                '<a target="_blank" rel="noopener noreferrer" href="' + base_url + '/$1">$1</a>'
+                '$1<a target="_blank" rel="noopener noreferrer" href="' + base_url + '/$2">$2</a>'
             );
         }
         // If doi.org link are find on the page, change them to base_url links
