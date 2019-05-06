@@ -25,6 +25,13 @@ var manifest = {
         "scripts/background.js"
       ]
     }
+  },
+  firefox: {
+    "browser_specific_settings": {
+      "gecko": {
+        "id": "test@test.com"
+      }
+    }
   }
 }
 
@@ -76,6 +83,11 @@ gulp.task("manifest", () => {
       fileName: "manifest.json",
       jsonSpace: " ".repeat(4),
       endObj: manifest.dev
+    })))
+    .pipe(gulpif(target === "firefox" && !production, $.mergeJson({
+      fileName: "manifest.json",
+      jsonSpace: " ".repeat(4),
+      endObj: manifest.firefox
     })))
     .pipe(gulp.dest(`./build/${target}`))
 });

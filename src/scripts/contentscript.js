@@ -10,7 +10,7 @@ function replace_dois(base_url) {
         // Search for DOI (ISO 263242) on the page  
         var DOINumberRegex = /([^\/])(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
         // Search Link for doi.org
-        var DOIOrgRegex = /(\/\/doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
+        var DOIOrgRegex = /(((?:https?\:\/\/)|(?:\/\/))doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
 
         // If DOI are find on the page, add a clickable link to base_url on the DOI on the page
         if (document.body.innerHTML.match(DOINumberRegex)) {
@@ -23,7 +23,7 @@ function replace_dois(base_url) {
         if (document.body.innerHTML.match(DOIOrgRegex)) {
             document.body.innerHTML = document.body.innerHTML.replace(
                 DOIOrgRegex,
-                base_url + '/$2'
+                base_url + '/$3'
             );
         }
     }
