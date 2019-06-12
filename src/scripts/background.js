@@ -27,7 +27,7 @@ ext.tabs.onUpdated.addListener(function (tabId, changeInfo, tab) {
       ext.storage.sync.set({ "currentPageBaseUrl": current_url.origin });
     update_badge();
   }
-}, {"properties": ["status"]});
+});
 
 ext.runtime.onMessage.addListener(function(message) {
   if (message.updateBaseUrlState) {
