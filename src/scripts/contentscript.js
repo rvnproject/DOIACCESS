@@ -7,7 +7,7 @@ function replace_dois(base_url) {
     */
     if (base_url != "" && base_url != undefined) {
         // Search for DOI (ISO 263242) on the page  
-        var DOINumberRegex = /(\s)(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
+        var DOINumberRegex = /([\s\>])(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+)\b/g;
         // Search Link for doi.org
         var DOIOrgRegex = /(((?:https?\:\/\/)|(?:\/\/))doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
 
