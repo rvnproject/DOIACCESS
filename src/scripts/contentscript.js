@@ -1,5 +1,23 @@
 import ext from "./utils/ext";
 
+function replaceElementContent(element, pattern, replacement) {
+    for (let node of element.childNodes) {
+        switch (node.nodeType) {
+            case Node.ELEMENT_NODE:
+                replaceElementContent(node, pattern, replacement);
+                break;
+            case Node.TEXT_NODE:
+                if (node.textContent.match(pattern) === null) {
+                    break;
+                }
+                node.parentElement.innerHTML = node.parentElement.innerHTML.replace(pattern, replacement);
+                break;
+            case Node.DOCUMENT_NODE:
+                replaceElementContent(node, pattern, replacement);
+        }
+    }
+}
+
 function replace_dois(base_url) {
     /*
     ** Replace DOI numbers by clickable links to their articles on the base_url site and links to
@@ -12,19 +30,17 @@ function replace_dois(base_url) {
         var DOIOrgRegex = /(((?:https?\:\/\/)|(?:\/\/))doi\.org\/(10[.][0-9]{4,}(?:[.][0-9]+)*\/(?:(?![\"&\'<>])\S)+))\b/g;
 
         // If DOI are find on the page, add a clickable link to base_url on the DOI on the page
-        if (document.body.innerHTML.match(DOINumberRegex)) {
-            document.body.innerHTML = document.body.innerHTML.replace(
-                DOINumberRegex,
-                '$1<a target="_blank" rel="noopener noreferrer" href="' + base_url + '/$2">$2</a>'
-            );
-        }
+        replaceElementContent(
+            document.body,
+            DOINumberRegex,
+            '$1<a target="_blank" rel="noopener noreferrer" href="' + base_url + '/$2">$2</a>'
+        );
         // If doi.org link are find on the page, change them to base_url links
-        if (document.body.innerHTML.match(DOIOrgRegex)) {
-            document.body.innerHTML = document.body.innerHTML.replace(
-                DOIOrgRegex,
-                base_url + '/$3'
-            );
-        }
+        replaceElementContent(
+            document.body,
+            DOIOrgRegex,
+            base_url + '/$3'
+        );
     }
 }
 
