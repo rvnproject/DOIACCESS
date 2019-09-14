@@ -24,7 +24,7 @@ function doesNodeHrefMatch(node, regex) {
 
 function formatTransformedDoi() {
   if (store.getters.isHighlighted) {
-    document.getElementsByClassName('do-i-access-extension').forEach(element => {
+    Array.from(document.getElementsByClassName('do-i-access-extension')).forEach(element => {
       element.style.backgroundColor = store.getters.highlightColor
       element.style.color = store.getters.fontColor
     })
@@ -92,7 +92,7 @@ store.watch(
           formatTransformedDoi()
           getDoiCount()
         }, 3000)
-      }, 1000)
+      }, 2000)
     }, 1000)
   }
 );
