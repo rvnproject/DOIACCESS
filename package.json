@@ -1,7 +1,7 @@
 {
   "name": "do-i-access",
-  "version": "1.1.0",
-  "description": "Do I Access allows you to change DOI numbers into clickable links to any site such as sci-hub for example.",
+  "version": "2.0",
+  "description": "Do I Access allows you to change DOI numbers into clickable links to the given Sci-Hub URL.",
   "author": "mde-pach <12986913+mde-pach@users.noreply.github.com>",
   "scripts": {
     "lint": "eslint --ext .js,.vue src",
