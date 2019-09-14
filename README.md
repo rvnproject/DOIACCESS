@@ -4,7 +4,7 @@
 
 [![RavenProject](/resources/img/raven_project_banner.png)](https://www.ravenproject.me)
 
-# RavenDOI  
+# DO I ACCESS 
 **_by Raven Project_**
 
 ---
@@ -14,10 +14,7 @@
 [![Firefox](https://img.shields.io/amo/users/ravenproject_doi.svg?label=Firefox%20users)](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)
 [![Firefox](https://img.shields.io/amo/v/ravenproject_doi.svg)](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)  
 
-RavenDOI is a Chrome extension that adds a clickable link to every DOI number on the visited page with the base URL of your choice (https://sci-hub.tw for example).
-
-Used with https://sci-hub.tw as base URL, RavenDOI transforms any DOI on the page into a clickable link to the corresponding sci-hub article.
-
+Do I Access is a browser extension that adds a clickable link to every DOI number on the visited page with the given sci-hub URL.
 
 - [How to use it?](#how-to-use-it-)
   * [Installation](#installation)
@@ -37,7 +34,7 @@ npm install
 npm run build
 ```
 
-Then install manually from `manifest.json` generated in the `build/$browser` folder.
+Then install manually from `manifest.json` generated in the `dist` folder.
 
 #### Install from store
 [Chrome web store](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)  

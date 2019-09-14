@@ -1,46 +1,78 @@
 {
-  "manifestAppName": {
-    "message": "RavenDOI",
-    "description": "The name of the extension in the manifest."
+  "appName": {
+    "message": "Do I Access",
+    "description": "The name of the extension."
   },
-  "manifestAppDescription": {
-    "message": "RavenDOI allows you to change DOI numbers into clickable links to any site such as sci-hub for example.",
+  "appDescription": {
+    "message": "Do I Access allows you to change DOI numbers into clickable links to any site such as sci-hub for example.",
     "description": "The description of the extension."
   },
-  "popupAppName": {
-    "message": "RavenDOI",
-    "description": "The name of the extension in the popup view."
-  },
-  "firstPartUrlOnPopupView": {
-    "message": "Base URL:",
-    "description": "The message for the first part of the URL on the popup view."
-  },
-  "CorrectBaseUrlMessage": {
-    "message": "This URL is correctly formatted",
+  "correctBaseUrlMessage": {
+    "message": "Valid URL",
     "description": "Message for a good formatted base URL."
   },
-  "IncorrectBaseUrlMessage": {
-    "message": "This URL is not correctly formatted",
+  "incorrectBaseUrlMessage": {
+    "message": "Invalid URL",
     "description": "Message for a wrong formatted base URL."
   },
-  "popupSupportUs": {
+  "scihubLocation": {
+    "message": "You don't know <a href=\"https://whereisscihub.now.sh/\" target=\"_blank\" rel=\"noopener noreferrer\">where is Sci-Hub ?</a>",
+    "description": "Information message for Sci-Hub address."
+  },
+  "doiCountMessage": {
+    "message": "DOI on this page.",
+    "description": "Message about the number of DOIs found on this page."
+  },
+  "invalidGivenUrl": {
+    "message": "The given URL is invalid.",
+    "description": "Message when the given URL is incorrectly formatted."
+  },
+  "invalidCurrentUrl": {
+    "message": "The extension does not work on this URL.",
+    "description": "Message when the current URL is invalid for the extension."
+  },
+  "switchButtonCount": {
+    "message": "Switch ON to see the DOI count.",
+    "description": "Message in place of the DOI count if the extension is not switch ON."
+  },
+  "supportUs": {
     "message": "Support us",
     "description": "Support us message."
   },
-  "optionSupportUsTitle": {
-    "message": "Support us",
-    "description": "Title of the support us section."
+  "bugReport": {
+    "message": "Report a bug",
+    "description": "Report a bug message."
+  },
+  "rateUs": {
+    "message": "Rate us",
+    "description": "Rate us message."
+  },
+  "options": {
+    "message": "Options",
+    "description": "Options."
+  },
+  "optionHighlight": {
+    "message": "Enable DOI highlight",
+    "description": "Checkbox message to enable doi highlight."
+  },
+  "optionFontColor": {
+    "message": "Font color",
+    "description": "Title of the font color."
+  },
+  "doiExample": {
+    "message": "DOI example",
+    "description": "DOI example."
   },
   "optionContribution": {
-    "message": "Contribute on <a href=\"https://github.com/mde-pach/ravenDOI\" target=\"_blank\" rel=\"noopener noreferrer\">github</a>",
+    "message": "Contribute on <a href=\"https://github.com/rvnproject/ravenDOI\" target=\"_blank\" rel=\"noopener noreferrer\">github</a>",
     "description": "Contribution informations."
   },
   "optionContactUs": {
-    "message": "Contact us through <a href=\"https://www.ravenproject.me/#contact\" target=\"_blank\" rel=\"noopener noreferrer\">our website</a>",
+    "message": "Contact us through <a href=\"https://ravenproject.me/#contact\" target=\"_blank\" rel=\"noopener noreferrer\">our website</a>",
     "description": "Contact informations."
   },
   "optionDonation": {
-    "message": "You can support us by <a href=\"https://www.ravenproject.me/#support-us\" target=\"_blank\" rel=\"noopener noreferrer\">donating</a> for this project and for following ones",
+    "message": "You can support us by <a href=\"https://ravenproject.me/#support-us\" target=\"_blank\" rel=\"noopener noreferrer\">donating</a> for this project and for following ones",
     "description": "Donation informations."
   },
   "optionCreditsTitle": {
@@ -54,5 +86,17 @@
   "optionDevelopCredits": {
     "message": "Developed by Maxime de Pachtere",
     "description": "Maxime de Pachtere credits."
+  },
+  "sciteAi": {
+    "message": "Do you know <a href=\"https://scite.ai/\" target=\"_blank\" rel=\"noopener noreferrer\">Scite.ai</a> ?",
+    "description": "scite.ai redirection message."
+  },
+  "black": {
+    "message": "black",
+    "description": "color black."
+  },
+  "white": {
+    "message": "white",
+    "description": "color white."
   }
 }
