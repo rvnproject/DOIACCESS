@@ -11,8 +11,8 @@
 
 [![Chrome](https://img.shields.io/chrome-web-store/users/edamfibpjbadepheeohkbnanbbgjnfpl.svg?label=Chrome%20users)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)
 [![Chrome](https://img.shields.io/chrome-web-store/v/edamfibpjbadepheeohkbnanbbgjnfpl.svg)](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)  
-[![Firefox](https://img.shields.io/amo/users/ravenproject_doi.svg?label=Firefox%20users)](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)
-[![Firefox](https://img.shields.io/amo/v/ravenproject_doi.svg)](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)  
+[![Firefox](https://img.shields.io/amo/users/do_i_access.svg?label=Firefox%20users)](https://addons.mozilla.org/en-US/firefox/addon/do_i_access/)
+[![Firefox](https://img.shields.io/amo/v/do_i_access.svg)](https://addons.mozilla.org/en-US/firefox/addon/do_i_access/)  
 
 Do I Access is a browser extension that adds a clickable link to every DOI number on the visited page with the given sci-hub URL.
 
@@ -29,7 +29,7 @@ Do I Access is a browser extension that adds a clickable link to every DOI numbe
 
 #### Install from source
 ```
-git clone git@github.com:mde-pach/ravenDOI.git
+git clone git@github.com:rvnproject/DOIACCESS.git
 npm install
 npm run build
 ```
@@ -38,7 +38,7 @@ Then install manually from `manifest.json` generated in the `dist` folder.
 
 #### Install from store
 [Chrome web store](https://chrome.google.com/webstore/detail/ravendoi/edamfibpjbadepheeohkbnanbbgjnfpl)  
-[Firefox add-ons](https://addons.mozilla.org/en-US/firefox/addon/ravenproject_doi/)  
+[Firefox add-ons](https://addons.mozilla.org/en-US/firefox/addon/do_i_access/)  
 
 
 ## Feature
